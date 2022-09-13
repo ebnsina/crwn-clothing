@@ -4,7 +4,9 @@ import {
   signInUserWithEmailAndPassword,
   signInWithGooglePopup,
 } from "../../utils/firebase/firebase.config";
-import Button from "../../components/button/button.component";
+import Button, {
+  VARIENT_CLASSES,
+} from "../../components/button/button.component";
 import FormInput from "../../components/form-input/form-input.component";
 import "./signin.styles.scss";
 
@@ -76,7 +78,7 @@ const SignIn = () => {
 
         <div className="buttons-container">
           <Button type="submit">Sign In</Button>
-          <Button varient="google" onClick={signInWithGoogle}>
+          <Button varient={VARIENT_CLASSES.google} onClick={signInWithGoogle}>
             Google Sign In
           </Button>
         </div>
