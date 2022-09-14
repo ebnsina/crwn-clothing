@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import { getCategoriesAndDocuments } from "../../utils/firebase/firebase.config";
 import { createAction } from "../../utils/reducer/reducer.utlis";
 import { CATEGORIES_ACTION_TYPES } from "./category.types";
